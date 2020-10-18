@@ -1,0 +1,20 @@
+<h1>Park Search Results</h1>
+
+<p>Search Results: <%= @parks.count %> </p>
+
+<% @parks.each do |park| %>
+  <ul class='parks'>
+    <p class='name'>
+      <%= park.name %>
+    </p>
+    <p class='hours'>
+      <%= park.hours %>
+    </p>
+    <p class='description'>
+      <%= park.description %>
+    </p>
+    <p class='directions'>
+      <%= park.directions %>
+    </p>
+  </ul>
+<% end %>
